@@ -1,0 +1,33 @@
+.wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+ol {
+    padding-left: 0;
+}
+li{
+    position: relative;
+    padding: 7px;
+    background-color: aqua;
+    margin-top: 12px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+li::after {
+    position: absolute;
+    content: "";
+    background-image: url(../delete-icon-5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    right: 5%;
+    cursor: pointer;
+}
